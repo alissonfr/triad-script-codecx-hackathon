@@ -3,12 +3,15 @@
 // This file is automatically updated during development when running `dev.ts`.
 
 import * as $0 from "./routes/_app.tsx";
+import * as $$0 from "./islands/header/PreHeader.tsx";
 
 const manifest = {
   routes: {
     "./routes/_app.tsx": $0,
   },
-  islands: {},
+  islands: {
+    "./islands/header/PreHeader.tsx": $$0,
+  },
   baseUrl: import.meta.url,
 };
 

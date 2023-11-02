@@ -9,6 +9,10 @@
     font-family: var(--font-family);
   }
 
+  mark {
+    @apply bg-accent text-accent-content;
+  }
+
   /** Remove default styles from input[type=number] */
   input[type=number]::-webkit-inner-spin-button,
   input[type=number]::-webkit-outer-spin-button {
@@ -16,30 +20,35 @@
     margin: 0;
   }
 
-  input[type=number] {
-    -moz-appearance: textfield;
-    appearance: textfield;
-  }
-}
-
-@layer components {
-
-  /** Prevent scroll when modal is open */
-  .no-scroll {
+  /* Disable scroll once drawer/modal is openned */
+  body:has(.drawer-toggle:checked),
+  body:has(.modal-toggle:checked) {
     overflow: hidden;
     height: 100vh;
   }
 }
 
-@layer utilities {
+.group:disabled .group-disabled\:animate-progress {
+  animation: progress-frame ease normal
+}
 
-  /** Remove scrollbar from overflow-auto */
-  .scrollbar-none {
-    scrollbar-width: none;
-    -ms-overflow-style: none;
+@keyframes progress-frame {
+  0% {
+    --dot-progress: 0%
   }
 
-  .scrollbar-none::-webkit-scrollbar {
-    display: none;
+  to {
+    --dot-progress: 100%
   }
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+  background-color: #71717a;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 6px;
+  background-color: #1f2937;
 }
