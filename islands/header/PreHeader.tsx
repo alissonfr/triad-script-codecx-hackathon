@@ -1,6 +1,7 @@
 import PhoneIcon from "https://deno.land/x/tabler_icons_tsx@0.0.3/tsx/phone.tsx";
 import MapPinIcon from "https://deno.land/x/tabler_icons_tsx@0.0.3/tsx/map-pin.tsx";
-import { useState, useRef, useEffect } from "preact/hooks";
+import { useState, useEffect } from "preact/hooks";
+import { country } from "../../utils/country.ts";
 
 interface country {
     id: string;
@@ -30,7 +31,7 @@ export default function PreHeader() {
     };
 
     const handleChangeLocation = (id: string) => {
-        console.log(id)
+        country.value = id;
     }
 
     useEffect(() => {
