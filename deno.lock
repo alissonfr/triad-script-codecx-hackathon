@@ -1936,6 +1936,7 @@
     "https://deno.land/x/rutt@0.0.13/mod.ts": "af981cfb95131152bf50fc9140fc00cb3efb6563df2eded1d408361d8577df20",
     "https://deno.land/x/sha1@v1.0.3/deps.ts": "2e1af51a48c8507017fdb057b950366601b177fb7e73d5de54c1b3e0e115d72e",
     "https://deno.land/x/sha1@v1.0.3/mod.ts": "146a101c9776cc9c807053c93f23e4b321ade5251f65745df418f4a75d5fd27b",
+    "https://deno.land/x/tabler_icons_tsx@0.0.3/tsx/check.tsx": "7a34654bec04502f8c411801621572232fa842a3a916fe6da0897aa0affb60ac",
     "https://deno.land/x/tabler_icons_tsx@0.0.3/tsx/chevron-down.tsx": "6b13f7eb4bf328fff274765bce4904e34be76f977fd786a00e1165e79abbe8e6",
     "https://deno.land/x/tabler_icons_tsx@0.0.3/tsx/heart.tsx": "0bb5b98cc3322349135b8829c4b448f46e10af07f6649938fc185f18cc39057c",
     "https://deno.land/x/tabler_icons_tsx@0.0.3/tsx/lemon-2.tsx": "0de8b795eb80cf892897ac09ac6f5478e4d5332a3c7f2e403e797eea376381b6",

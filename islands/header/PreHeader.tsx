@@ -1,7 +1,8 @@
 import PhoneIcon from "https://deno.land/x/tabler_icons_tsx@0.0.3/tsx/phone.tsx";
+import CheckIcon from "https://deno.land/x/tabler_icons_tsx@0.0.3/tsx/check.tsx";
 import MapPinIcon from "https://deno.land/x/tabler_icons_tsx@0.0.3/tsx/map-pin.tsx";
 import { useState, useEffect } from "preact/hooks";
-import { country } from "../../utils/country.ts";
+import { country as subscribeCountry } from "../../utils/country.ts";
 
 interface country {
     id: string;
@@ -31,14 +32,9 @@ export default function PreHeader() {
     };
 
     const handleChangeLocation = (id: string) => {
-        country.value = id;
+        subscribeCountry.value = id;
     }
 
-    useEffect(() => {
-        console.log(countries)
-    }, [])
-
-  
   return (
     <>
     <div class="text-white bg-primary text-xs">
@@ -51,12 +47,16 @@ export default function PreHeader() {
             {menuOpen && (
             <div class="absolute bg-white top-5 text-gray-600 text-base w-48 -left-14">
                 <ul>
-                    {/* {countries.map((country, index) => {
-                        <li key={index} class="p-2 border-b border-gray-300 hover:bg-gray-100">{country.name}</li>
-                    })} */}
-                    <li class="p-2 border-b border-gray-300 hover:bg-gray-100" onClick={() => {handleChangeLocation("brasil")}}>Brasil</li>
-                    <li class="p-2 border-b border-gray-300 hover:bg-gray-100" onClick={() => {handleChangeLocation("canada")}}>Canadá</li>
-                    <li class="p-2 border-b border-gray-300 hover:bg-gray-100" onClick={() => {handleChangeLocation("angola")}}>Angola</li>
+                    {countries.map((country, index) => {
+                        return <li 
+                            key={index} 
+                            class="p-2 border-b border-gray-300 hover:bg-gray-100 flex gap-2 items-center" 
+                            onClick={() => {handleChangeLocation(country.id)}}
+                            >
+                                {country.name}
+                                {subscribeCountry.value === country.id && <CheckIcon class="w-3 h-3"/>}
+                            </li>
+                    })}
                 </ul>
             </div>
         )}

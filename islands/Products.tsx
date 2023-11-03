@@ -35,7 +35,7 @@ export default function Products(
   ) {
 
     useEffect(() =>{
-        console.log(country.value)
+        console.log("valor de country mudou em products: ", country.value)
     }, [country.value])
 
   return (
