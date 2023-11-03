@@ -1947,6 +1947,8 @@
     "https://deno.land/x/tabler_icons_tsx@0.0.3/tsx/star-filled.tsx": "32eb300de04bd7a03a09326c4965b6b3be36465df81f17a2df6c69119b0f4834",
     "https://deno.land/x/tabler_icons_tsx@0.0.3/tsx/star.tsx": "4730f62f7d104c396df711179e31d342bc4fbbb60d7cfe2e7f95e7088b8c9634",
     "https://deno.land/x/tabler_icons_tsx@0.0.3/tsx/user.tsx": "dcf5aae380c0652a0e06a49daa0fb68eff654e7378260bfea2802022821fbda1",
+    "https://deno.land/x/tabler_icons_tsx@0.0.5/tsx/adjustments-exclamation.tsx": "ee801f9318a855b124ec43e0d4a297dc4bc2a23ac324835b208966a6aaecdfe7",
+    "https://deno.land/x/tabler_icons_tsx@0.0.5/tsx/adjustments-question.tsx": "52f5ae1bcb2c4d7605bfd2b8082d43b2502b68bf890834c90c653b170c61064d",
     "https://deno.land/x/ts_morph@17.0.1/common/DenoRuntime.ts": "537800e840d0994f9055164e11bf33eadf96419246af0d3c453793c3ae67bdb3",
     "https://deno.land/x/ts_morph@17.0.1/common/mod.ts": "01985d2ee7da8d1caee318a9d07664774fbee4e31602bc2bb6bb62c3489555ed",
     "https://deno.land/x/ts_morph@17.0.1/common/ts_morph_common.js": "49a79124b941ba2b35d81ac9eb90fc33c957b2640cdb97569c1941bac5a3bbdb",

@@ -16,12 +16,6 @@ const manifest = {
     "deco-sites/start/sections/Products.tsx": $$$$$$2,
     "deco-sites/start/sections/Theme.tsx": $$$$$$3,
   },
-  "apps": {
-    "deco-sites/start/apps/decohub.ts": $$$$$$$$$$$0,
-    "deco-sites/start/apps/site.ts": $$$$$$$$$$$1,
-  },
-  "name": "deco-sites/start",
-  "baseUrl": import.meta.url,
 };
 
 export type Manifest = typeof manifest;
