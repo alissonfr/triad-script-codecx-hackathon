@@ -92,24 +92,24 @@ export default function SimpleTextList({
         <h2 class="lg:w-56 font-bold pt-8">{children}</h2>
         <div className="pb-8 pt-8 sm:flex-row">
           <div className="pb-4 flex items-center lg:flex-row gap-2">
-            <div class="rounded-lg border-gray py-2 px-4 border">
+            <div class="rounded-lg border-gray py-2 px-4 border cursor-pointer">
               <BrandInstagramIcon />
             </div>
-            <div class="rounded-lg border-gray py-2 px-4 border">
+            <div class="rounded-lg border-gray py-2 px-4 border cursor-pointer">
               <BrandFacebookIcon />
             </div>
-            <div class="rounded-lg border-gray py-2 px-4 border">
+            <div class="rounded-lg border-gray py-2 px-4 border cursor-pointer">
               <BrandEmailIcon />
             </div>
           </div>
           <div className="flex items-center lg:flex-row gap-2">
-            <div class="rounded-lg border-gray py-2 px-4 border">
+            <div class="rounded-lg border-gray py-2 px-4 border cursor-pointer">
               <BrandTwiterIcon />
             </div>
-            <div class="rounded-lg border-gray py-2 px-4 border">
+            <div class="rounded-lg border-gray py-2 px-4 border cursor-pointer">
               <BrandLinkedinIcon />
             </div>
-            <div class="rounded-lg border-gray py-2 px-4 border">
+            <div class="rounded-lg border-gray py-2 px-4 border cursor-pointer">
               <BrandTikTokIcon />
             </div>
           </div>
@@ -123,7 +123,7 @@ export default function SimpleTextList({
               <div>
                 {item.items.map((item) => {
                   return (
-                    <div class="hover:text-primary transition-transform transform duration-300 ease-in-out">
+                    <div class="cursor-pointer hover:text-primary transition-transform transform duration-300 ease-in-out">
                       {item.text}
                     </div>
                   );

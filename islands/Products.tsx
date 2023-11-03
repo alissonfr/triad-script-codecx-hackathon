@@ -39,7 +39,7 @@ export default function Products(
     }, [country.value])
 
   return (
-    <section class="lg:container mx-8 my-5 mt-20 text-xl md:text-base">
+    <section class="lg:container mx-8 my-5 mt-10 mb-28 text-xl md:text-base">
       <h1 class="mt-5 mb-10 text-2xl font-bold">{title}</h1>
       <div class="flex gap-4 mb-10">
         <button class="rounded-3xl border border-gray-700 py-1.5 px-3 bg-transparent gray-700 font-semibold transition-all duration-300 hover:text-white hover:bg-primary">Ofertas</button>
