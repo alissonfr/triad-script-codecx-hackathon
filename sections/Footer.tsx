@@ -9,23 +9,30 @@ export default function Footer() {
       <div className="flex items-center sm:flex-col lg:flex-row pt-8 pb-8">
         <div className="flex items-center gap-2 selection:lg:flex-row">
           <LaravelIcon />
-          <span className="pr-8 hover:text-primary">Become Seller</span>
+          <span className="pr-8 hover:text-primary">Torne-se vendedor</span>
         </div>
         <div className="flex items-center gap-2 selection:lg:flex-row">
           <GifIcon />
-          <span className="pr-8 hover:text-primary">Gift Cards</span>
+          <span className="pr-8 hover:text-primary">
+            Cartões de presente
+          </span>
         </div>
         <div className="flex items-center gap-2 selection:lg:flex-row">
           <HelpIcon />
-          <span className="pr-8 hover:text-primary">Help Canter</span>
+          <span className="pr-8 hover:text-primary">Centro de ajuda</span>
         </div>
       </div>
       <div className="flex items-center sm:flex-col lg:flex-row">
-        <span className="hover:text-primary">Terms of Service</span>
-        <span className="pl-8 hover:text-primary">Privacy & Policy</span>
+        <span className="hover:text-primary">
+          Termos de serviço
+        </span>
+        <span className="pl-8 hover:text-primary">
+          Política de Privacidade
+        </span>
       </div>
       <div className="flex items-center sm:flex-col lg:flex-row pr-12">
-        <span className="pr-8 hover:text-primary">Powered by | 2023</span>{" "}
+        <span className="pr-8 hover:text-primary">Distribuído por | 2023</span>
+        {" "}
         <PoweredByDeco width={76} />
       </div>
     </div>
