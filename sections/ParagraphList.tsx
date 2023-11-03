@@ -1,61 +1,72 @@
-import type { HTMLWidget } from "apps/admin/widgets.ts";
-
-/** @title {{{title}}} */
-export interface Paragraph {
-  title: string;
-  text: HTMLWidget;
+export interface Image {
+  src?: string;
+  alt?: string;
+  title?: string;
 }
 
 export interface Props {
+  src?: string;
+  alt?: string;
   title?: string;
-  items?: Array<Paragraph>;
+  items?: Array<Image>;
 }
 
 export default function ParagraphList({
   title = "Main Features",
   items = [
     {
-      title: "Easy to use page builder",
-      text:
-        "Design high-converting shopping experiences with a powerful, visual builder. Your business team with the autonomy to modify components without writing a single line of code.",
+      src:
+        "https://images.unsplash.com/photo-1532453288672-3a27e9be9efd?auto=format&fit=crop&q=80&w=1364&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      alt: "Summer fashion",
+      title: "Summer",
     },
     {
-      title: "Create A/B tests in 5 secs",
-      text:
-        "No complicated set-up here, simply select a page or section you want to test ideas on, and get testing! Try experimenting with different headlines, sales copy, or product descriptions and quickly learn which idea converts the best.",
+      src:
+        "https://images.unsplash.com/photo-1445205170230-053b83016050?auto=format&fit=crop&q=80&w=1471&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      alt: "Winter fashion",
+      title: "Winter",
     },
     {
-      title: "Craft unique experiences",
-      text:
-        "Conversion-driven storefronts that are optimized for each audience, increasing engagement and conversion rates.",
+      src:
+        "https://images.unsplash.com/photo-1578932750294-f5075e85f44a?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTR8fHJvdXBhc3xlbnwwfHwwfHx8MA%3D%3D",
+      alt: "Tropical fashion",
+      title: "Tropical",
     },
     {
-      title: "Analyze your data",
-      text:
-        "Integrated real-time analytics to identify the greatest opportunities to boost conversions.",
+      src:
+        "https://images.unsplash.com/photo-1558769132-cb1aea458c5e?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8cm91cGElMjBkZSUyMG1vZGElMjBvdXRvbm98ZW58MHx8MHx8fDA%3D",
+      alt: "Autumn fashion",
+      title: "Autumn",
+    },
+    {
+      src:
+        "https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cm91cGElMjBmZW1pbmluYXxlbnwwfHwwfHx8MA%3D%3D",
+      alt: "Spring fashion",
+      title: "Spring",
     },
   ],
 }: Props) {
   return (
-    <div class="lg:container mx-8 md:mx-16 lg:mx-auto mb-8 lg:mb-20 pt-8 lg:border-t flex flex-col lg:flex-row gap-10 text-xl md:text-base">
-      <h2 class="flex-none lg:w-56 font-bold pb-2 border-b lg:border-none">
-        {title}
-      </h2>
-      <div class="flex-auto flex flex-col gap-8">
-        {items.map((item) => {
-          return (
-            <div class="flex flex-col md:flex-row md:pb-8 lg:border-b gap-2 md:gap-4 lg:gap-16">
-              <h3 class="flex-none font-bold md:w-2/5 lg:w-52">{item.title}</h3>
-              <div
-                class="flex-auto"
-                dangerouslySetInnerHTML={{ __html: item.text }}
-              >
-              </div>
-              <div class="hidden xl:block flex-none w-40"></div>
+    <section className="lg:container mx-8 md:mx-16 lg:mx-auto mt-8 md:mt-12 mb-28 text-xl md:text-base flex-auto">
+      <h1 className="pb-14 text-lg lg:text-2xl text-white font-bold">
+        Shop Our Top Categories
+      </h1>
+      <div className="flex flex-col lg:flex-row space-y-4 lg:space-y-0 lg:space-x-4">
+        {items.map((image, index) => (
+          <div key={index} class="mb-10 md:mb-20 relative">
+            <div className="absolute opacity-100 top-8 justify-center flex inset-0 text-white text-2xl font-bold h-68 w-60">
+              {image.title}
             </div>
-          );
-        })}
+            <img
+              className="object-cover rounded-lg h-56 lg:h-68 w-full lg:w-60"
+              src={image.src}
+              alt={image.alt}
+            />
+          </div>
+        ))}
       </div>
-    </div>
+    </section>
   );
 }
+
+/* transition-transform transform scale-100 group-hover:scale-105 */
