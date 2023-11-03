@@ -12,44 +12,44 @@ export interface Props {
 }
 
 export default function ParagraphList({
-  title = "Main Features",
+  title = "Principais Categorias",
   items = [
     {
       src:
         "https://images.unsplash.com/photo-1532453288672-3a27e9be9efd?auto=format&fit=crop&q=80&w=1364&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      alt: "Summer fashion",
-      title: "Summer",
+      alt: "Moda verão",
+      title: "Verão",
     },
     {
       src:
         "https://images.unsplash.com/photo-1445205170230-053b83016050?auto=format&fit=crop&q=80&w=1471&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      alt: "Winter fashion",
-      title: "Winter",
+      alt: "Moda inverno",
+      title: "Inverno",
     },
     {
       src:
         "https://images.unsplash.com/photo-1578932750294-f5075e85f44a?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTR8fHJvdXBhc3xlbnwwfHwwfHx8MA%3D%3D",
-      alt: "Tropical fashion",
+      alt: "Moda tropical",
       title: "Tropical",
     },
     {
       src:
         "https://images.unsplash.com/photo-1558769132-cb1aea458c5e?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8cm91cGElMjBkZSUyMG1vZGElMjBvdXRvbm98ZW58MHx8MHx8fDA%3D",
-      alt: "Autumn fashion",
-      title: "Autumn",
+      alt: "Moda outono",
+      title: "Outono",
     },
     {
       src:
         "https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cm91cGElMjBmZW1pbmluYXxlbnwwfHwwfHx8MA%3D%3D",
-      alt: "Spring fashion",
-      title: "Spring",
+      alt: "Moda primavera",
+      title: "Primavera",
     },
   ],
 }: Props) {
   return (
     <section className="lg:container mx-8 md:mx-16 lg:mx-auto mt-8 md:mt-12 mb-28 text-xl md:text-base flex-auto">
       <h1 className="pb-14 text-lg lg:text-2xl font-bold">
-        Shop Our Top Categories
+      Compre nossas principais categorias
       </h1>
       <div className="flex flex-col lg:flex-row space-y-4 lg:space-y-0 lg:space-x-4">
         {items.map((image, index) => (
