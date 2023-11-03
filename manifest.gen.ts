@@ -4,9 +4,8 @@
 
 import * as $$$$$$0 from "./sections/Footer.tsx";
 import * as $$$$$$1 from "./sections/Hero.tsx";
-import * as $$$$$$2 from "./sections/ParagraphList.tsx";
-import * as $$$$$$3 from "./sections/SimpleTextList.tsx";
-import * as $$$$$$4 from "./sections/Theme.tsx";
+import * as $$$$$$2 from "./sections/Products.tsx";
+import * as $$$$$$3 from "./sections/Theme.tsx";
 import * as $$$$$$$$$$$0 from "./apps/decohub.ts";
 import * as $$$$$$$$$$$1 from "./apps/site.ts";
 
@@ -14,9 +13,8 @@ const manifest = {
   "sections": {
     "deco-sites/start/sections/Footer.tsx": $$$$$$0,
     "deco-sites/start/sections/Hero.tsx": $$$$$$1,
-    "deco-sites/start/sections/ParagraphList.tsx": $$$$$$2,
-    "deco-sites/start/sections/SimpleTextList.tsx": $$$$$$3,
-    "deco-sites/start/sections/Theme.tsx": $$$$$$4,
+    "deco-sites/start/sections/Products.tsx": $$$$$$2,
+    "deco-sites/start/sections/Theme.tsx": $$$$$$3,
   },
   "apps": {
     "deco-sites/start/apps/decohub.ts": $$$$$$$$$$$0,

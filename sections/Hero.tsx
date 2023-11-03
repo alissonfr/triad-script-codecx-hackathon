@@ -2,15 +2,13 @@ import type { ImageWidget } from "apps/admin/widgets.ts";
 import Header from "$store/components/header/Header.tsx";
 
 
-/** @title {{{title}}} - {{{href}}} */
+/** @title {{{href}}} */
 export interface Link {
-  title: string;
   href: string;
 }
 
 export interface Props {
   logo?: ImageWidget;
-  title?: string;
   /** @format textarea */
   headline?: string;
   headsub?: string;
@@ -18,7 +16,6 @@ export interface Props {
 }
 
 export default function Hero({
-  title = "deco.cx",
   logo = "/logo.svg",
   headline = "Shopping And Department Store.",
 }: Props) {
@@ -29,7 +26,7 @@ export default function Hero({
         <div class="lg:container mx-8 md:mx-16 lg:mx-auto text-gray-100">
           <h1 class="text-6xl font-bold">Estilo que faz você <br/> se destacar</h1>
           <p class="my-6 text-xl">Nossas roupas são projetadas não apenas para vestir, mas <br/> para empoderar você a se destacar em qualquer ocasião.</p>
-          <button class="rounded-2xl text-xl bg-primary font-semibold py-3 px-6">Saiba mais</button>
+          <button class="rounded-2xl text-xl bg-primary font-semibold py-3 px-6 hover:bg-blue-400">Saiba mais</button>
         </div>
     </section>
     </>
