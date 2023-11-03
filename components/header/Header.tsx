@@ -6,6 +6,10 @@ import ShoppingCartIcon from "https://deno.land/x/tabler_icons_tsx@0.0.3/tsx/sho
 import ChevronDownIcon from "https://deno.land/x/tabler_icons_tsx@0.0.3/tsx/chevron-down.tsx";
 
 export interface Props {
+  /**
+   * @title Logo
+   * @default /logo.svg
+   */
   logo?: ImageWidget;
 }
 

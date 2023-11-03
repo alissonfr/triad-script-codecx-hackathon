@@ -47,7 +47,7 @@ export default function ParagraphList({
   ],
 }: Props) {
   return (
-    <section className="lg:container mx-8 md:mx-16 lg:mx-auto mt-8 md:mt-12 mb-28 text-xl md:text-base flex-auto">
+    <section className="lg:container mx-8 md:mx-16 lg:mx-auto mt-8 md:mt-12 mb-10 text-xl md:text-base flex-auto">
       <h1 className="pb-14 text-lg lg:text-2xl font-bold">
       Compre nossas principais categorias
       </h1>
