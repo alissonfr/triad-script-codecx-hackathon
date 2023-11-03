@@ -48,7 +48,7 @@ export default function ParagraphList({
 }: Props) {
   return (
     <section className="lg:container mx-8 md:mx-16 lg:mx-auto mt-8 md:mt-12 mb-28 text-xl md:text-base flex-auto">
-      <h1 className="pb-14 text-lg lg:text-2xl text-white font-bold">
+      <h1 className="pb-14 text-lg lg:text-2xl font-bold">
         Shop Our Top Categories
       </h1>
       <div className="flex flex-col lg:flex-row space-y-4 lg:space-y-0 lg:space-x-4">
@@ -58,7 +58,7 @@ export default function ParagraphList({
               {image.title}
             </div>
             <img
-              className="object-cover rounded-lg h-56 lg:h-68 w-full lg:w-60"
+              className="object-cover rounded-lg h-56 lg:h-68 w-full lg:w-60 group-hover:scale-105"
               src={image.src}
               alt={image.alt}
             />
@@ -69,4 +69,4 @@ export default function ParagraphList({
   );
 }
 
-/* transition-transform transform scale-100 group-hover:scale-105 */
+/*scale-100 transition-transform transform  group-hover:scale-105 */
